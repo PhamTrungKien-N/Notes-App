@@ -18,7 +18,7 @@ public class MainDAO {
     }
 
     @Query("SELECT * FROM notes ORDER BY id DESC")
-    List<Notes> getall() {
+    public List<Notes> getAll() {
         return null;
     }
 

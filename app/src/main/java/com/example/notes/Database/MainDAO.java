@@ -12,9 +12,9 @@ import com.example.notes.Models.Notes;
 import java.util.List;
 
 @Dao
-public class MainDAO {
+public abstract class MainDAO {
     @Insert(onConflict = REPLACE)
-    void insert(Notes notes) {
+    public void insert(Notes notes) {
     }
 
     @Query("SELECT * FROM notes ORDER BY id DESC")
